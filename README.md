@@ -1,5 +1,8 @@
 ## This repo is focused more on how the react and redux works.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d751e714-a992-455f-813b-2e909683f972/deploy-status)](https://app.netlify.com/sites/react-redux-working/deploys)
+
+
 #### For the CSS Part I have used [Semantic UI](https://cdnjs.com/libraries/semantic-ui)
 
 ##### Dependencies - `npm install redux react-redux axios react-router-dom`
