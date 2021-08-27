@@ -2,7 +2,7 @@
 
 #### For the CSS Part I have used [Semantic UI](https://cdnjs.com/libraries/semantic-ui)
 
-##### Dependencies - npm install redux react-redux axios react-router-dom
+##### Dependencies - `npm install redux react-redux axios react-router-dom`
 <Br />
 
 ## Redux Life Cycle - Small Overview
@@ -14,3 +14,7 @@ This is what is been implemented in this project.
 
 If you want to see the Redux store in our Chrome Dev then you'll need an extension.
 Here is this [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension) where we will be able to see all the states and when we fire or dispatch the actions.    
+
+A fake api store to fetch actual products from.   
+https://fakestoreapi.com/docs    
+Open above mentioned link and then go to `Get all products` and copy-paste the code.
