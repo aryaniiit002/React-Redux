@@ -20,7 +20,7 @@ https://fakestoreapi.com/docs
 Open above mentioned link and then go to `Get all products` and copy-paste the code.   
 
 
-`Reducers` - The concept of a Reducer became popular in JavaScript with the rise of Redux as state management solution for React. ... Basically reducers are there to manage state in an application.
+`Reducers` - The concept of a Reducer became popular in JavaScript with the rise of Redux as state management solution for React. Basically reducers are there to manage state in an application.
 
 What's happening in redux/ and with components is that -
 we have 2 reducers - allProducts , product.     
@@ -37,3 +37,8 @@ Which is valid we need remove the selected product when component destroyed.
 That's it.
 
 Let me know if I understood anything wrong.
+
+Now i want you to do something open the site and click on any product then go back and again click on another product. After doing this go to Redux inspect and see the actions performed in Inspector.      
+You will see something like this 
+
+![redux inspector](public/redux_inspector.jpg?raw=true "Title")
