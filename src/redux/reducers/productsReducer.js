@@ -1,16 +1,13 @@
 // Here we will create the reducer and reducer always take the inital state and the action 
 import { ActionTypes } from "../constants/action-types";
 const intialState = {
-    products: [{
-        id: 1,
-        title: "Aryan",
-        category: "programmer"
-    }],
+    products: [],
 };
 
-// Reducer - productsReducer
+// Reducers
 export const productsReducer = (state = intialState, { type, payload }) => {
     switch (type) {
+        // We will update the state with the payload that we have received the data from the server
         case ActionTypes.SET_PRODUCTS:
             return {...state, products: payload };
         default:
@@ -19,7 +16,7 @@ export const productsReducer = (state = intialState, { type, payload }) => {
 };
 
 export const selectedProductsReducer = (state = {}, { type, payload }) => {
-    console.log(type);
+    // console.log(type);
     switch (type) {
         case ActionTypes.SELECTED_PRODUCT:
             return {...state, ...payload };

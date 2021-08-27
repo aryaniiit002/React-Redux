@@ -1,13 +1,14 @@
-import React, { useEffect, useCallback, useMemo } from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
-import { setProducts } from "../redux/actions/productsActions";
+import { useDispatch } from "react-redux";
+import { setProducts } from "../redux/actions/productsActions"; // Action
 import ProductComponent from "./ProductComponent";
 
+// We will get the data from the server and then dispatch an action and update our store.
 const ProductListing = () => {
     // Fetch the product we have in our redux store
-    const products = useSelector((state) => state.allProducts.products);
-    // const dispatch = useDispatch();
+    // const products = useSelector((state) => state.allProducts.products);
+    const dispatch = useDispatch();
 
     const fetchProducts = async () => {
         const response = await axios
@@ -15,14 +16,15 @@ const ProductListing = () => {
             .catch((err) => {
                 console.log("Err: ", err);
             });
-        console.log(response.data)
+        dispatch(setProducts(response.data));
     };
 
     useEffect(() => {
         fetchProducts();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    console.log(products);
+    // console.log(products);
     return (
         <div className="ui grid container">
             <ProductComponent />
