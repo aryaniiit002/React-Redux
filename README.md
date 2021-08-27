@@ -11,3 +11,6 @@
 
 Action Creator which is our components and from our components we actually dispatch the action which goes to the reducer and reducer has the power to update the state.
 This is what is been implemented in this project.
+
+If you want to see the Redux store in our Chrome Dev then you'll need an extension.
+Here is this [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension) where we will be able to see all the states and when we fire or dispatch the actions.    
